@@ -1,0 +1,76 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 165px;
+  width: 240px;
+  max-width: 90vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 19px;
+
+  .sidebarText {
+    color: white;
+    font-family: "Oswald-Regular", sans-serif;
+    margin: 60px 0 0 40px;
+
+    strong {
+      cursor: pointer;
+    }
+
+    ul {
+      margin: 0px -15px 25px;
+
+      li {
+        cursor: pointer;
+        list-style: none;
+        font-family: "Oswald-Light", sans-serif;
+        margin-left: -15px;
+        margin-top: 2px;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+      }
+
+      li:hover,
+      li.active {
+        font-weight: bold;
+      }
+
+      li:after,
+      li.active:after {
+        content: "";
+        display: block;
+        margin: 0px auto;
+        height: 1px;
+        width: 0;
+        background: 0 0;
+        transition: width 0.5s ease, background-color 0.5s ease;
+      }
+
+      li:hover:after,
+      li.active:after {
+        font-weight: bold;
+        width: 100%;
+        background: #fbfcff;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .iconSidebar {
+      margin: -20px;
+
+      .icon {
+        width: 45px;
+        margin: 0px 2px 0px;
+        vertical-align: middle;
+        border-style: none;
+      }
+    }
+  }
+}
+
+.sidebar.scrolled {
+  top: 80px;
+}

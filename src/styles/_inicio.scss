@@ -1,0 +1,285 @@
+body {
+  transition: 0.15s all ease;
+  background-color: black;
+}
+
+body.web {
+  padding-top: 165px;
+}
+
+body.scrolled {
+  padding-top: 165px;
+}
+
+[v-cloak] > * {
+  display: none;
+}
+
+.container-inicio,
+.container-inicio .row,
+.container-inicio .row .sections {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#colAutenticidad,
+#colPureza,
+.navbar {
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.section1 {
+  background-color: #333;
+  background: url("../assets/inicio/autenticidad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-color: #080705;
+  cursor: pointer;
+}
+
+.section2 {
+  background-color: #333;
+  background: url("../assets/inicio/pureza.png");
+  background-repeat: no-repeat;
+  background-position: 0 0%;
+  background-size: cover;
+  background-color: #080705;
+  cursor: pointer;
+}
+
+.section1 h1,
+.section2 h1 {
+  font-family: "Oswald-Bold", sans-serif;
+  font-size: 12vw;
+  color: white;
+
+  -webkit-transition: all 1.5s ease-out;
+  -moz-transition: all 1.5s ease-out;
+  -o-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.flaticon-arrows-1:before {
+  content: "\f100";
+}
+.flaticon-arrows:before {
+  content: "\f101";
+}
+
+.section1_small,
+.section2_small {
+  cursor: pointer;
+
+  h1 {
+    font-family: "Oswald-Bold", sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    opacity: 0.3;
+    transition: 1.5s;
+    float: left;
+  }
+
+  .arrow {
+    font-family: Flaticon;
+    font-style: normal;
+    font-size: 2vw;
+    color: white;
+    float: left;
+  }
+}
+
+.section1_small .arrow {
+  margin: 1.5vw -2vw 0vw 2vw;
+}
+
+.section2_small .arrow {
+  margin: 0vw 2vw 0vw -2vw;
+}
+
+.section1_small {
+  background-color: #333;
+  background: url("../assets/inicio/autenticidad_small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-color: #080705;
+
+  .arrow {
+    left: 75%;
+  }
+}
+
+.section2_small {
+  background-color: #333;
+  background: url("../assets/inicio/pureza_small.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0%;
+  background-color: #080705;
+
+  .arrow {
+    left: 25%;
+  }
+}
+
+.sections .swipeSlider {
+  width: 100%;
+}
+
+.footer {
+  font-family: "Oswald-Light", sans-serif;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  height: 100%;
+  z-index: 1;
+
+  div {
+    padding: 1vw 2vw;
+  }
+
+  .copyright {
+    font-size: 1.3vw;
+    padding: 1vw 4vw 1vw 6vw;
+  }
+
+  .webConsumo {
+    font-size: 1.3vw;
+    padding: 1.3vw 2vw 1vw 3vw;
+
+    a {
+      color: white;
+    }
+    span {
+      font-family: "Oswald-Bold", sans-serif;
+      font-size: 0.9vw;
+
+      .zero {
+        font-size: 0.7vw;
+        top: -0.2vw;
+        position: relative;
+      }
+    }
+  }
+
+  .rrss {
+    font-size: 1.7vw;
+
+    .icon {
+      width: 40px;
+      margin: -0.3vw 2px 0px;
+      vertical-align: middle;
+      border-style: none;
+    }
+  }
+}
+
+.footerLegal {
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.9;
+
+  a {
+    color: inherit;
+  }
+
+  span {
+    margin: 0 0.5em;
+  }
+}
+
+@media (max-width: 991px) {
+  .section1 {
+    background-color: #333;
+    background: url("../assets/inicio/autenticidad_responsive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-color: #080705;
+  }
+
+  .section1_small {
+    cursor: pointer;
+
+    h1 {
+      font-size: 6vw;
+      opacity: 1;
+      transform: rotate(-90deg);
+      position: relative;
+      float: left;
+      margin: 0 -9vw;
+    }
+
+    .arrow {
+      font-size: 6vw;
+      margin: -7vw 3vw 0vw 0vw;
+      float: right;
+    }
+  }
+
+  .section2_small {
+    cursor: pointer;
+
+    h1 {
+      font-size: 6vw;
+      opacity: 1;
+      transform: rotate(-90deg);
+    }
+
+    .arrow {
+      font-size: 6vw;
+      margin: 0vw 14vw 0vw -20vw;
+      float: right;
+    }
+  }
+
+  .footer {
+    .webConsumo {
+      font-size: 3.5vw;
+      padding: 5vw 0 1vw;
+      text-align: center;
+
+      span {
+        font-size: 2.5vw;
+
+        .zero {
+          font-size: 1.8vw;
+          top: -1vw;
+        }
+      }
+    }
+
+    .rrss {
+      font-size: 1.7vw;
+      text-align: center;
+
+      .icon {
+        width: 14vw;
+        margin: 4vw 16px;
+      }
+    }
+
+    .copyright {
+      font-size: 5vw;
+      padding: 1vw 0 4vw;
+      text-align: center;
+    }
+  }
+}

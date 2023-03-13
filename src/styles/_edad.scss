@@ -1,0 +1,170 @@
+
+div.home-edad{
+  min-height: 500px;
+  height: 100%;
+  background-color: #333;
+  background: url("../assets/edad/fondo.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  width: 100%;
+  position: absolute;
+  z-index: 99999;
+  
+  .inner {
+    padding: 2rem;
+  }
+
+  .site-wrapper{
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+    .site-wrapper-inner{
+      display: table-cell;
+      vertical-align: middle;
+
+      .cover-container{
+        margin-right: auto;
+        margin-left: auto;
+
+
+        .head{
+          display: block;
+          margin-bottom: 3rem;
+
+          img {
+            width: 235px;
+            margin: 0 0 20px;
+          }
+        }
+
+        .cover{
+          padding: 0 1.5rem;
+
+          .cover-heading{
+            font-family: 'Oswald-Bold', sans-serif;
+            font-size: 55px;
+          }
+
+          .cover-subheading{
+            font-family: 'Oswald-Regular', sans-serif;
+            font-size: 50px;
+            margin-bottom: 4vw;
+          }
+
+        }
+
+        .foot{
+          display: block;
+
+          .inner{
+            padding: 15vh 0px 0px;
+          }
+          .inner span{
+            font-family: 'Oswald-Light', sans-serif;
+            font-size: 30px;
+            letter-spacing: 0px;
+            text-decoration: none;
+            color: white;
+          }
+
+          .inner span .grados {
+            font-family: 'Oswald-Bold', sans-serif;
+            font-size: 20px;
+          }
+
+          .inner span .zero {
+            font-size: 13px;
+            position: relative;
+            top: -7px;
+            left: -4px;
+          }
+
+          .inner span a,
+          .inner span a:focus,
+          .inner span a:hover {
+            color: #fff;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+}
+
+.cover .btn-lg {
+  //padding: 10px 70px;
+  padding: 0.5vh 6.9vh;
+  font-weight: 700;
+  background-color:rgba(0, 0, 0, 0);
+  border-color: #662126;
+  font-family: 'Oswald-Bold', sans-serif;
+  border-radius: 25px;
+  border-width: 2px;
+  font-size: 6vh;
+  min-width: 11vw;
+}
+
+.cover .btn-lg:first-child {
+  margin-right: 80px;
+}
+
+.cover .btn-lg:hover,
+.cover .btn-lg:active,
+.btn-primary:not([disabled]):not(.disabled):active{
+  text-shadow: none;
+  border-color: #662126;
+  background-color: #662126;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:not([disabled]):not(.disabled):active:focus{
+  box-shadow: 0 0 0 0.2rem rgba(102, 33, 38, 1);
+  border:none;
+}
+
+
+@media (max-width: 991px) {
+  body.edad .head, body.edad .foot, body.edad .cover-container {
+    width: 100%;
+  }
+
+  body.edad .cover .btn-lg, body.edad .cover .btn-group-lg > .btn {
+    padding: 1vh 5vh 1vh;
+    font-size: 45px;
+    min-width: 160px;
+  }
+
+  .cover .btn-lg:first-child {
+    margin-right: 50px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  .cover .btn-lg:first-child {
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 375px){
+  .cover .btn-lg:first-child {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+
+
